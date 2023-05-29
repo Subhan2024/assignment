@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+class Car{
+    SetName(name){
+        this.name = name;
+
+    }
+    start(){
+        console.log('car is start' +this.name);
+    }
+    stop (){
+        console.log('car is stop' +this.name);
+    }
+}
+class Honda extends Car{
+    fullspeed(speed){
+        console.log('high speed for' +this.name +' is ' + speed);
+    }
+}
+let mycar = new Honda();
+mycar.SetName(' ' + 'civic');
+mycar.start();
+mycar.stop();
+mycar.fullspeed(200);
+
+
+    </script>
+</body>
+</html>
