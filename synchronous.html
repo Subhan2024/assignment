@@ -8,38 +8,42 @@
 </head>
 <body>
     <script>
-function registration(cb){
-    setTimeout(function (){
-        cb()
-    }, 1000);
+function Registration(cb){
+    setTimeout(function(){
+        cb();
+    }, 2000)
 }
 function login(cb){
-    setTimeout(function (){
-        cb()
-    }, 1500);
-}function Dataget(cb){
-    setTimeout(function (){
-        cb()
-    }, 2000);
-}function DataDisplayed(cb){
-    setTimeout(function (){
-        console.log("Data Displyed")
-    }, 1000);
+    setTimeout(function(){
+        cb();
+    }, 1500)
 }
+function Dataget(cb){
+    setTimeout(function(){
+        cb();
+    }, 1000)
+}
+function DataDisplayed(cb){
+    setTimeout(function(){
+    console.log("Data Displayed")
+    }, 1500)
+}
+
 
 // callback hell
 
-registration(function (){
-    console.log("Registration is Successfull");
-login(function (){
-    console.log("Login Successfull");
-Dataget(function (){
-    console.log("Data gotted");
+Registration(function(){
+    console.log("registration is successful")
+    login(function(){
+        console.log("login successful")
+        Dataget(function(){
+            console.log("Data gotted")
+        })
+            DataDisplayed();
+        
+    });
 });
-    DataDisplayed();
-}); 
 
-});
     </script>
 </body>
 </html>
