@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function prom(states){
+            return new Promise(function(resolve , reject){
+                if(states){
+                    resolve("promise is fullfilled");
+                }
+                else{
+                    reject("jhoot bolta hai sala");
+                }
+            });
+        }
+        // let a = prom(false)
+        // console.log(a)
+
+        // function fullfilled(result){
+        //     console.log(result)
+        // }
+        // function rejected(error){
+        //     console.log(error);
+        // }
+
+        prom(true).then(result => console.log(result)).catch(false).catch(error => console.log(error));
+        
+    </script>
+</body>
+</html>
