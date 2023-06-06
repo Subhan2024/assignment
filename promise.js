@@ -64,7 +64,7 @@
 
                 (async function(){
                     let rootElement = document.getElementById("rootFolder");
-                    await fetch("https://jsonplaceholder.typicode.com/posts")
+                    await fetch("https://dummyjson.com/products")
                     .then(response => response.json())
                     .then((data) => {
                         console.log(data);
@@ -76,9 +76,8 @@
                             <h3 class="card-title">${data[i].id}</h3>
                             <h3 class="card-title">${data[i].title}</h3>
                               <p class="card-text">${data[i].body}</p>
-    
-  </div>
-</div>
+                              </div>
+                              </div>
                             `
                         }
                     })
