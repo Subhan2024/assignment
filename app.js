@@ -13,7 +13,7 @@
                 // console.log(value)
                 list.innerHTML +=`
                 <div class="col-lg-3">
-                <div class="card">
+                <div class="card" style= "hight:>
                 <div class="card-body">
                   <h5 class="card-title">${value.author}</h5>
                   <p class="card-text">${value.description}</p>
